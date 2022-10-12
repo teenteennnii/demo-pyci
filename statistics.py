@@ -1,3 +1,5 @@
+import math
+
 def average(data):
     """Return the average of a list of numeric values in data."""
     if len(data)==0:
@@ -34,17 +36,11 @@ def variance(data):
     # some deliberately misformatted code. Run flake8 and fix it.
     n=len(data)
     if n==0:
-<<<<<<< HEAD:statistics.py
         raise ValueError("List must contain at least one value")
     avg = average(data)
     return sum( [(x-avg)**2 for x in data] )/n
-=======
-        raise ValueError("Must have at least one value")
-    average = sum(data)/n
-    return sum( [(x-average)**2 for x in data] )/n
->>>>>>> c1b7d34dbea03ca30e3917b95534d74a167f3e26:stats.py
 
 def stdev(data):
     """The population standard deviation of a list of data values."""
-    return sqrt(variance(data))
+    return math.sqrt(variance(data))
 
