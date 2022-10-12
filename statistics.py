@@ -38,6 +38,7 @@ def variance(data):
     avg = average(data)
     return sum( [(x-avg)**2 for x in data] )/n
 
+
 def stdev(data):
     """The population standard deviation of a list of data values."""
     return sqrt(variance(data))
