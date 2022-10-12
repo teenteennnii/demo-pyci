@@ -1,0 +1,6 @@
+<<<<<<< HEAD
+flake8
+=======
+# No requirements beyond what's in standard Python distribution.
+coverage
+>>>>>>> c1b7d34dbea03ca30e3917b95534d74a167f3e26
